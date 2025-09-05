@@ -1,0 +1,118 @@
+/*
+    CSS Basics & The Box Model - Stylesheet
+
+    This file demonstrates the correct linkage of HTML and CSS,
+    the use of various selectors, and a clear implementation
+    of the CSS Box Model.
+*/
+
+/* --- Basic Typography and Background --- */
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 40px;
+    background-color: #e0e0e0;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+}
+
+h1 {
+    color: #1a1a1a;
+}
+
+h2 {
+    color: #0056b3;
+}
+
+/* --- Section and Container Styling --- */
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+section {
+    margin-bottom: 30px;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 20px;
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+/* --- The CSS Box Model Demonstration --- */
+
+.box-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 20px 0;
+    display: flex;
+    gap: 20px;
+}
+
+.box {
+    /* Padding: space inside the element, between content and border */
+    padding: 20px;
+    
+    /* Border: a line drawn around the element's content and padding */
+    border: 4px solid #4a90e2;
+
+    /* Margin: space outside the element, between the border and other elements */
+    margin: 10px;
+
+    background-color: #d1e2f7;
+    flex: 1;
+}
+
+.highlight {
+    background-color: #f7d1d1;
+    border-color: #e24a4a;
+}
+
+.box-spacing p {
+    /* Margin: Used here to demonstrate vertical spacing between paragraphs */
+    margin: 0 0 15px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #eaf1f7;
+}
+
+/* --- General Element Styling --- */
+
+.styled-text {
+    color: #4CAF50;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+ul {
+    border: 1px solid #b3b3b3;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    border-top: 2px solid #555;
+}
